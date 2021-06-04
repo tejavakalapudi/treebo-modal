@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import AppLayout from './containers/Layout';
+import ModalStack from './containers/ModalStack';
+import './App.scss';
+
+// implement a Modal Component which can be rendered as Jsx
+// implement a Modal component which needs to be called from any component
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ModalStack />
+      <AppLayout/>
     </div>
   );
 }
